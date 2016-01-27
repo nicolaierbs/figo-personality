@@ -23,7 +23,7 @@ public class AccountPersonality{
 	private final static String TRANSACTIONS_TABLE_FORMAT = "%8.2f %15s %23s %10tB %2te, %tY %80s %n";
 	private final static String SECURITY_TABLE_FORMAT = "%-3s %7.2f %6d %9.2f %9.2f %45s %n";
 
-		private final static boolean USE_DEMO = false;
+		private final static boolean USE_DEMO = true;
 
 	public static void main(String[] args) throws FigoException, IOException {
 		FigoSession session;
@@ -50,7 +50,7 @@ public class AccountPersonality{
 		Properties properties = new Properties();
 		InputStream input = null;
 
-		input = new FileInputStream("src/main/resources/nico.properties");
+		input = new FileInputStream("src/main/resources/figo.properties");
 		properties.load(input);
 
 		return properties;
